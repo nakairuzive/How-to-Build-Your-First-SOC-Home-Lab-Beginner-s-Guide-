@@ -18,6 +18,7 @@ For this tutorial, we’ll be using **VirtualBox** because it’s free, widely u
 Use this link to download: https://www.virtualbox.org/wiki/Downloads
 
 ![image.png](attachment:739f83b2-4aa5-41ba-8373-58b9f9eb026b:image.png)
+[![Kali Image 1](/Blog 1/Kali img 1.png)]
 
 Once downloaded:
 
