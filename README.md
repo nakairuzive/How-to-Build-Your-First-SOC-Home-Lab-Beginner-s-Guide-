@@ -17,8 +17,7 @@ For this tutorial, we’ll be using **VirtualBox** because it’s free, widely u
 
 Use this link to download: https://www.virtualbox.org/wiki/Downloads
 
-![image.png](attachment:739f83b2-4aa5-41ba-8373-58b9f9eb026b:image.png)
-[![Kali Image 1](/Blog 1/Kali img 1.png)]
+![image alt](https://github.com/nakairuzive/How-to-Build-Your-First-SOC-Home-Lab-Beginner-s-Guide-/blob/76e6585eae044d70f3f511e5cdc6b9d609f201de/Blog%201/Kali%20img1.png)
 
 Once downloaded:
 
