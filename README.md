@@ -1,5 +1,5 @@
 # How to Build Your First SOC Home Lab - Beginner's Guide
-If you’re new to cybersecurity and looking for a structured, beginner-friendly way to get hands-on practice, you’re in the right place.
+<p> If you’re new to cybersecurity and looking for a structured, beginner-friendly way to get hands-on practice, you’re in the right place.</p>
 
 In this guide, I’ll walk you through the exact steps to set up your first **Security Operations Centre (SOC) Home Lab**. This is one of the best ways to gain practical experience, avoid common mistakes I made starting out, and show potential employers that you’re serious about learning.
 
