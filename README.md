@@ -17,7 +17,7 @@ For this tutorial, we’ll be using **VirtualBox** because it’s free, widely u
 
 Use this link to download: https://www.virtualbox.org/wiki/Downloads
 
-![image alt](https://github.com/nakairuzive/How-to-Build-Your-First-SOC-Home-Lab-Beginner-s-Guide-/blob/76e6585eae044d70f3f511e5cdc6b9d609f201de/Blog%201/Kali%20img1.png)
+![image alt](https://github.com/nakairuzive/How-to-Build-Your-First-SOC-Home-Lab-Beginner-s-Guide-/blob/58133a4cadc00a549d8e21a223747d98434003dd/Blog%201/VitualBox%20img1.png)
 
 Once downloaded:
 
@@ -40,7 +40,7 @@ For this beginner SOC lab, we’ll use two core systems:
 
 1. Go to the official [Windows 10 download page](https://www.microsoft.com/en-us/software-download/windows10).
     
-    ![image.png](attachment:3021ea36-267e-419d-87d7-07c9b360d75a:image.png)
+   ![image alt](https://github.com/nakairuzive/How-to-Build-Your-First-SOC-Home-Lab-Beginner-s-Guide-/blob/58133a4cadc00a549d8e21a223747d98434003dd/Blog%201/Windows10%20img1.png)
     
 2. Run the installer and select **“Create installation media”**.
 3. Use the recommended options for your PC, then choose **“ISO file”**.
