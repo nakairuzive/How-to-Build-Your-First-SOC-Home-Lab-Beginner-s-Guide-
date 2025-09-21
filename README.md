@@ -17,7 +17,7 @@ For this tutorial, we’ll be using **VirtualBox** because it’s free, widely u
 
 [Use this link to download](https://www.virtualbox.org/wiki/Downloads)
 
-![image alt](https://github.com/nakairuzive/How-to-Build-Your-First-SOC-Home-Lab-Beginner-s-Guide-/blob/58133a4cadc00a549d8e21a223747d98434003dd/Blog%201/VitualBox%20img1.png)
+<img src= "Home Lab Images/image (2).png.jpg" width = 600 height = 600>
 
 Once downloaded:
 
@@ -40,26 +40,27 @@ For this beginner SOC lab, we’ll use two core systems:
 
 1. Go to the official [Windows 10 download page](https://www.microsoft.com/en-us/software-download/windows10).
     
-   ![image alt](https://github.com/nakairuzive/How-to-Build-Your-First-SOC-Home-Lab-Beginner-s-Guide-/blob/58133a4cadc00a549d8e21a223747d98434003dd/Blog%201/Windows10%20img1.png)
+  <img src= "Home Lab Images/image (3).png.jpg" width = 600 height = 600>
+   
     
-2. Run the installer and select **“Create installation media”**.
-3. Use the recommended options for your PC, then choose **“ISO file”**.
-4. Once the ISO finishes downloading, open VirtualBox and click **“New”**.
+3. Run the installer and select **“Create installation media”**.
+4. Use the recommended options for your PC, then choose **“ISO file”**.
+5. Once the ISO finishes downloading, open VirtualBox and click **“New”**.
     
-    ![image.png](attachment:99271e95-2e9c-4646-b222-ece3ee58e6c6:image.png)
+    <img src= "Home Lab Images/image (4).png.jpg" width = 600 height = 600>
     
-5. Name your VM, select the folder location, and attach the ISO file.
+6. Name your VM, select the folder location, and attach the ISO file.
     
-    ![image.png](attachment:ed51cd5d-d8b1-4bda-bd3c-00d4b2788cce:image.png)
+    <img src= "Home Lab Images/image (5).png.jpg" width = 600 height = 600>
     
-6. Assign resources based on your computer’s capacity. Recommended minimums:
+7. Assign resources based on your computer’s capacity. Recommended minimums:
 - **Memory (RAM):** 2 GB (2048 MB)
 - **Processors:** 1 CPU
 - **Virtual Hard Disk:** 50 GB.
     
-    ![image.png](attachment:6b84dc57-2f0c-4a26-903b-7567d7383162:image.png)
+    <img src= "Home Lab Images/image (6).png.jpg" width = 600 height = 600>
     
-    ![image.png](attachment:cd274ed7-e9ad-45f5-88fe-ba71d84fda7b:image.png)
+    <img src= "Home Lab Images/image (7).png.jpg" width = 600 height = 600>
     
 1. Complete the setup and click **“Start”** to launch your Windows VM.
 
@@ -72,19 +73,19 @@ Next, we’ll add Kali Linux to our lab.
 1. Go to the [Kali Linux download page](https://www.kali.org/get-kali/).
 2. Under **Virtual Machines**, select the **VirtualBox image**. (This option makes setup much faster.)
     
-    ![image.png](attachment:b85f91c1-ea87-4e3a-9cae-06f2a01ef38a:image.png)
+   <img src= "Home Lab Images/image (8).png.jpg" width = 600 height = 600>
     
-    ![image.png](attachment:28b0e213-648e-4655-8952-8a086bd1ade1:image.png)
+    <img src= "Home Lab Images/image (9).png.jpg" width = 600 height = 600>
     
 3. Install [7-Zip](https://www.7-zip.org/download.html) to extract the compressed folder.
     
-    ![image.png](attachment:ffc75f6c-d8ba-459f-8429-0b2d61a9dc25:image.png)
+    <img src= "Home Lab Images/image (10).png.jpg" width = 600 height = 600>
     
 4. Right-click the downloaded Kali file → **7-Zip → Extract to…**
     
-    ![image.png](attachment:b12fed4b-7822-4e62-b311-e90c4daeb70f:image.png)
+   <img src= "Home Lab Images/image (11).png.jpg" width = 600 height = 600>
     
-    ![image.png](attachment:382ef365-7b4b-4585-ba03-c32fcd2fd978:image.png)
+   <img src= "Home Lab Images/image (12).png.jpg" width = 600 height = 600>
     
 5. Open the extracted folder and double-click the file ending in **“.vbox.”**
     - This automatically imports Kali into VirtualBox.
@@ -96,8 +97,121 @@ Next, we’ll add Kali Linux to our lab.
         ![image.png](attachment:97c70dd2-5e7a-4780-9006-52f7fe39767e:image.png)
         
 6. Start the Kali VM.
+**Step 6**: Kali user name and password
 
-🔑 Default login:
+The default username is “kali” and the password is also “kali”
+
+### 2.3 Install Splunk Enterprise onto your Windows machine
+
+**Step 1**: Install Splunk Enterprise; without this, you will not be able to log in through your web browser
+
+![image.png](attachment:f1125cd7-5854-4e1e-a2b7-844cc09120e1:image.png)
+
+![image.png](attachment:aabdaa95-8748-4fa9-9881-b6975cb2cc35:image.png)
+
+![image.png](attachment:edc8462a-d021-4f27-9e3d-ecc0ed7d785f:image.png)
+
+![image.png](attachment:f85cf261-455c-4e24-96ba-8334715324ad:image.png)
+
+![image.png](attachment:7db41287-3bf0-4959-9ee6-b69fda0a318b:image.png)
+
+### **4.6 Sysmon Installation & Configuration**
+
+<aside>
+
+**Why Sysmon?** 
+
+Windows Event Logs are good, but Sysmon is great. It provides incredibly detailed information about process creations, network connections, file changes, and more. Using a robust configuration file (like Olaf Hartong's) applies a set of rules to filter out noise and log only the most security-relevant events.
+
+</aside>
+
+**Step 1**: Use this link to download Sysmon https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+
+![image.png](attachment:b0b64794-f6e4-4835-b456-a29ed07ef6d7:image.png)
+
+**Step 2**: Extract the Sysmon download file
+
+**Step 3**: To configure Sysmon, we will use the Olaf configuration. Open the RAW file, right-click and save the file as “sysmonconfig”, and save it to the extracted Sysmon file
+
+> **Concept note:** Without a good configuration, Sysmon can overwhelm you with irrelevant logs. Using a community-tested config ensures you capture useful security events.
+> 
+
+https://github.com/olafhartong/sysmon-modular/blob/a9ff298f6d228c181be71b213c73d111c6096f41/sysmonconfig.xml
+
+**Step 4**: Copy the path address of the Sysmon file in your downloads. Next, open “Windows PowerShell” and run it as an administrator
+
+![image.png](attachment:36e7be7d-7761-4056-b222-3fba0a159d7b:image.png)
+
+**Step 5**:  Type in “cd + path address”, there after type in “.\Sysmon64.exe -i .\sysmonconfig.xml” to install Sysmon
+
+![image.png](attachment:f0dcae88-db0c-410f-b584-6b018b34c51b:image.png)
+
+> **Concept note:** Native Windows logs (like Security logs) capture basic events (e.g., logon success/failure). Sysmon adds the *depth* you need for threat detection, making it essential in a detection lab.
+> 
+
+## Chapter 3: Configure your network as an internal network
+
+To reduce the risk of compromising your host machine when analysing malware in the virtual machine, we can reconfigure the network settings of the virtual machines.
+
+**Step 1**: Open VirtualBox. 
+
+**Step 2**: Click on the Windows Machine and then select the “Settings” option on the menubar and head to “Network”
+
+**Step 3**: Change the network to an internal network, and give the network a name.
+
+![image.png](attachment:acad5f95-fda2-435f-a885-d3e53362fa0c:image.png)
+
+**Step 4**: Repeat the same steps for the Kali Machine
+
+![image.png](attachment:bbb9660d-6557-4f61-a0d7-70d52aeca733:image.png)
+
+![image.png](attachment:45a28631-0166-4f39-b612-a007e3953d41:image.png)
+
+**Step 5**: Log on to your Windows machine
+
+**Step 6**: Open the “Network and Internet settings” form, and there select the option to “Change network adapter”
+
+![image.png](attachment:bd06ed3e-9272-4d06-a470-01ed4add968d:image.png)
+
+![image.png](attachment:2d260c18-9775-4e16-98d9-fca8f43f3419:image.png)
+
+**Step 7**: Open the Ethernet properties, select IPv4 and make the following changes
+
+IP address: Pick your own IP address 
+
+**Use this as a guide: 192.168.10.0/24** → usable IPs: `192.168.10.1` to `192.168.10.254`
+
+Subnet Mask: 255.255.255.0
+
+![image.png](attachment:b6eddbde-18a7-4e2a-a5c5-a55c2cbf10d6:image.png)
+
+**Step 8**: Open the Command Prompt by typing in “cmd” into the search bar, and verify that your IP address has changed
+
+**Step 9**: Log on to your Kali Machine
+
+**Step 10**: Right-click on the Ethernet icon that can be found in the top right corner and select “Edit connections”
+
+![image.png](attachment:5552c67b-20ed-45f3-9054-382c9823736e:image.png)
+
+**Step 11**: Click on the “gear” icon at the bottom and make the following changes under “IPv4 Settings”
+
+Method: Manual
+
+Add a new Address:  **Use this as a guide: 192.168.10.0/24** → usable IPs: `192.168.10.1` to `192.168.10.254`
+
+Netmask: 24
+
+![image.png](attachment:895d1d57-83c1-4f81-aa4c-d91e16c943b3:image.png)
+
+Hit the save button
+
+**Step 12**: Right-click anywhere on the screen to open the terminal, type in “ifconfig” or “ip a” to verify the new IP address
+
+![image.png](attachment:1b2d429d-42ba-43e9-9f01-1da564fd9c41:image.png)
+
+**Step 13**: Check if there is connectivity between the two machines. On the Windows machine, open the command prompt to ping the Kali machine
+
+Use this: ping IP(Kali)
 
 - **Username:** `kali`
 - **Password:** `kali`
